@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <link rel="stylesheet" href="./resume.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <section id="contactpage">
+  <header>
+    <div class="container-fluid"> 
+     <div class="container">  
+       <nav class="navbar navbar-expand-lg">
+       <span class="nav-list"></span>
+       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="fa-solid fa-bars"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+         <div class="offcanvas-header"> 
+          <label class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></label>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 ">
+            <li class="nav-item"><a class="nav-link active" href="./mainpage.html">ABOUT ME</a></li>
+           <li class="nav-item"><a class="nav-link" href="./educationpage.html">EDUCATION</a></li>
+           <li class="nav-item"><a class="nav-link" href="./projectpage.html">PROJECT</a></li>
+           <li class="nav-item"><a class="nav-link" href="./skillspage.html">SKILLS</a></li>
+           <li class="nav-item"><a class="nav-link" href="./contactpage.html">CONTACT</a></li>
+          </ul>
+       </div>
+       </div>
+     </nav>
+    </div>
+  </div>
+</header>
+<form method="post" action="#" class="container">
+<div class="contactcard">
+ <div class="card-body">
+    <form >
+      <div class="mb-4">
+      <label for="fname">Name<span style="color:rgb(255, 0, 0)">*</span></label><br>                    
+      <input type="text" id="fname" name="fname"style="height: 30px; width: 25rem;"><br>
+      <span >Enter your name</span><br>
+      <span id="fnameerr">Input Field Is Empty</span>
+      <span id="fnamevalid">enter the charectors</span>
+      </div>
+      
+      <div class="mb-4">
+      <label for="Email">Email<span style="color:rgb(255, 0, 0)">*</span></label><br>
+      <input type="text" id="email" name="email"style="height: 30px; width: 25rem;"><br>
+      <span>Enter Email</span><br>
+      <span id="emailerr">Input Field Is Empty</span>
+      <span id="emailevalid">Enter The Valid Email Including"@.com"</span>
+      </div>
+      
+      <div class="mb-4">
+      <label for="tel">Phone Number<span style="color:rgb(255, 0, 0)">*</span></label><br>
+      <input type="tel" id="tel" name="tel"style="height: 30px; width: 25rem;"><br>
+      <span>Your Active Phone Number</span><br>
+      <span id="telerr">Input Field Is Empty</span>
+      <span id="numerr">Enter The Valid 10 Digit Number</span>
+      </div>
+      
+      <div class="mb-4">
+        <label for="Textarea">Please Share Your Message,Feedback<span style="color:rgb(255, 0, 0)">*</span></label><br>
+        <textarea class="textarea"style="height: 40px; width: 25rem;"></textarea><br>
+        <span id="textareaerr">Enter A Value For This Field</span>
+        </div>
+        
+        <div style="text-align: center;">
+          <button type="submit" class="btn btn-primary active">Submit</button><br>
+          <span id="generalerr">Empty Inputfields Cannot Be Submitted</span>
+        </div>
+        <div id="Message">
+          Thank You!
+        </div>
+      </form>
+    </div>
+  </div>
+</form>
+</section>
+<script src="./resume.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
